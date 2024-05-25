@@ -3134,9 +3134,6 @@
   "/javdb/home/:category?/:sort?/:filter?": [
     "nczitzk"
   ],
-  "/javdb/:category?/:sort?/:filter?": [
-    "nczitzk"
-  ],
   "/javdb/lists/:id/:filter?/:sort?": [
     "dddepg"
   ],
@@ -3218,6 +3215,9 @@
   ],
   "/jin10/topic/:id": [
     "miles170"
+  ],
+  "/jingzhengu/news": [
+    "TonyRL"
   ],
   "/jinse/:category?": [
     "nczitzk"
