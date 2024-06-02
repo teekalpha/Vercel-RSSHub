@@ -4631,6 +4631,12 @@
   "/ps/trophy/:id": [
     "DIYgod"
   ],
+  "/psyche/topic/:topic": [
+    "emdoe"
+  ],
+  "/psyche/type/:type": [
+    "emdoe"
+  ],
   "/pts/curations": [
     "nczitzk"
   ],
@@ -4641,6 +4647,9 @@
   ],
   "/pubmed/trending/:filters?": [
     "nczitzk"
+  ],
+  "/pubscholar/explore/:category?/:keyword?": [
+    "TonyRL"
   ],
   "/pumc/mdadmission": [
     "nczitzk"
