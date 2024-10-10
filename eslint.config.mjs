@@ -24,6 +24,7 @@ export default [{
         '**/.vscode',
         '**/docker-compose.yml',
         '!.github',
+        'assets/build/radar-rules.js',
         'lib/routes-deprecated',
         'lib/router.js',
         '**/babel.config.js',
@@ -123,6 +124,11 @@ export default [{
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-var-requires': 'off',
 
+        '@typescript-eslint/no-unused-expressions': ['error', {
+            allowShortCircuit: true,
+            allowTernary: true,
+        }],
+
         // unicorn
         'unicorn/consistent-destructuring': 'warn',
         'unicorn/consistent-function-scoping': 'warn',
@@ -173,6 +179,7 @@ export default [{
         }],
 
         'unicorn/prefer-code-point': 'warn',
+        'unicorn/prefer-global-this': 'off',
         'unicorn/prefer-logical-operator-over-ternary': 'warn',
         'unicorn/prefer-module': 'off',
         'unicorn/prefer-node-protocol': 'off',
@@ -246,6 +253,11 @@ export default [{
 
         'yml/no-empty-mapping-value': 'off',
     },
+}, {
+        files: ['.puppeteerrc.cjs', 'api/vercel.ts'],
+        rules: {
+            '@typescript-eslint/no-require-imports': 'off',
+        }
 }, {
     files: ['**/*.yaml', '**/*.yml'],
 
